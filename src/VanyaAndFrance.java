@@ -3,25 +3,45 @@
 //https://codeforces.com/contest/677/problem/A
 
 import java.util.Scanner;
-
 public class VanyaAndFrance {
-
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int personNumbers = scanner.nextInt();
-        int wallHeight = scanner.nextInt();
-        int result = 0;
+        Scanner scanner=new Scanner(System.in);
+        int numberOfFriends=scanner.nextInt();
+        int heightOfWall=scanner.nextInt();
+        int y=0;
+        int z=0;
+        int n=0;
 
-        while (personNumbers != 0) {
-            int tallPerson = scanner.nextInt();
-            result++;
-//
-            if (tallPerson > wallHeight) {
-                result++;
+
+        for(int i=0;i<numberOfFriends;i++){
+            int x=scanner.nextInt();
+            if(x>heightOfWall){
+          z+=2;
+
             }
-            personNumbers--;
+            else if (x<heightOfWall){
+                y++;
+
+            }else {
+                n++;
+            }
+
         }
-        System.out.println(result);
+        System.out.println(z+y+n);
+
+
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
