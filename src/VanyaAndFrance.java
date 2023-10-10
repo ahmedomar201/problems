@@ -17,20 +17,14 @@ public class VanyaAndFrance {
             int x=scanner.nextInt();
             if(x>heightOfWall){
           z+=2;
-
             }
             else if (x<heightOfWall){
                 y++;
-
             }else {
                 n++;
             }
-
         }
         System.out.println(z+y+n);
-
-
-
     }
 }
 
