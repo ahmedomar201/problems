@@ -12,15 +12,16 @@ public class BeautifulMatrix {
 //        System.out.println(numberOfColumns);
 //        System.out.println(numberOfRow);
         int y=0;
-        List<int>z;
+        int z=0;
+
 
         for(int i=0;i<25;i++){
        int x= scanner.nextInt();
             y= x;
-        }
-        System.out.println(y);
-        if(y==1){
 
         }
+        z=y/25;
+        System.out.println(z);
+
     }
 }
